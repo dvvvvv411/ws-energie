@@ -61,7 +61,7 @@ const BenefitsSection = () => {
             Unsere Vorteile
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Warum <span className="gradient-text-premium">GHS Heizöl</span>?
+            Warum <span className="gradient-text-premium">WS Energie</span>?
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed">
             Als führender Heizöl-Anbieter in Deutschland stehen wir für Qualität, Zuverlässigkeit 
