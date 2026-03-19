@@ -7,7 +7,7 @@ const ReviewsSection = () => {
       name: 'Maria H.',
       location: 'Berlin',
       rating: 5,
-      text: 'Bereits zum dritten Mal bestellt und immer top zufrieden! Pünktliche Lieferung, faire Preise und sehr freundlicher Service. Kann GHS Heizöl nur weiterempfehlen!',
+      text: 'Bereits zum dritten Mal bestellt und immer top zufrieden! Pünktliche Lieferung, faire Preise und sehr freundlicher Service. Kann WS Energie nur weiterempfehlen!',
       date: '2026-01-15'
     },
     {
@@ -42,7 +42,7 @@ const ReviewsSection = () => {
       name: 'Klaus F.',
       location: 'Leipzig',
       rating: 5,
-      text: 'Beste Heizölpreise in der Region! Habe verschiedene Anbieter verglichen und GHS Heizöl war nicht nur günstiger, sondern auch noch serviceorientierter.',
+      text: 'Beste Heizölpreise in der Region! Habe verschiedene Anbieter verglichen und WS Energie war nicht nur günstiger, sondern auch noch serviceorientierter.',
       date: '2025-12-05'
     }
   ];

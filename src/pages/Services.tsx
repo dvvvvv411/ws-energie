@@ -12,7 +12,7 @@ const Services = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Heizöl-Lieferservice | Tankwagen-Lieferung deutschlandweit - GHS Heizöl</title>
+        <title>Heizöl-Lieferservice | Tankwagen-Lieferung deutschlandweit - WS Energie</title>
         <meta name="description" content="Professioneller Heizöl-Lieferservice: Tankwagenlieferung, Schlauchverlegung bis 50m, Ölstandsmessung. ✓ Schnell ✓ Zuverlässig ✓ Sicher. Jetzt Termin anfragen!" />
       </Helmet>
       <Header />
