@@ -1,26 +1,18 @@
 
 
-# Meta-Tags & verbleibende GHS-Referenzen korrigieren
+# Fix: Desktop Header/Logo overlapping Hero Content
 
-## Noch zu ändernde Dateien
+## Problem
+The desktop logo is `h-28` (112px tall), making the fixed header very large. The hero section only has `lg:pt-32` (128px) top padding — not enough to clear the header (top bar + logo + padding ≈ 160px+).
 
-### 1. Services.tsx (Zeile 15)
-- Title: `GHS Heizöl` → `WS Energie`
+## Changes
 
-### 2. Products.tsx (Zeile 16)
-- Title: `GHS Heizöl` → `WS Energie`
+### 1. `src/components/Header.tsx` — Reduce desktop logo height
+- Line 71: Change `h-28` → `h-16` (64px) — still prominent but reasonable
 
-### 3. index.html
-- Meta description und keywords: sicherstellen, dass `WS Energie` verwendet wird (bereits korrekt laut vorheriger Änderung)
+### 2. `src/components/HeroSection.tsx` — Increase desktop top padding
+- Line 73: Change `lg:pt-32` → `lg:pt-40` for more clearance
 
-### 4. ReviewsSection.tsx (Zeilen 10, 45)
-- `GHS Heizöl` → `WS Energie` in Bewertungstexten
-
-### 5. BenefitsSection.tsx (Zeile 64)
-- `GHS Heizöl` → `WS Energie`
-
-### 6. Logo-Import-Pfade (nicht umbenennen, nur Referenz-Konsistenz)
-- Header.tsx und Footer.tsx importieren noch `ghs-logo.png` / `ghs-logo-footer.png` — Variable-Aliase sind bereits umbenannt, Dateipfade bleiben bis Logo-Austausch
-
-Insgesamt 5 Dateien mit einfachen String-Ersetzungen.
+### 3. `src/components/ProductHero.tsx` & `src/components/ServiceHero.tsx`
+- Increase top padding similarly to account for the fixed header on desktop
 
