@@ -7,7 +7,7 @@ const ReviewsSection = () => {
       name: 'Maria H.',
       location: 'Berlin',
       rating: 5,
-      text: 'Bereits zum dritten Mal bestellt und immer top zufrieden! Pünktliche Lieferung, faire Preise und sehr freundlicher Service. Kann GHS Heizöl nur weiterempfehlen!',
+      text: 'Bereits zum dritten Mal bestellt und immer top zufrieden! Pünktliche Lieferung, faire Preise und sehr freundlicher Service. Kann WS Energie nur weiterempfehlen!',
       date: '2026-01-15'
     },
     {
