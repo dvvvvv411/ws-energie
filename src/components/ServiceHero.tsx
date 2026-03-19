@@ -23,7 +23,7 @@ const ServiceHero = () => {
   ];
 
   return (
-    <section className="relative py-24 bg-gradient-to-br from-slate-50 via-white to-primary-50 overflow-hidden">
+    <section className="relative pt-32 pb-24 md:pt-40 bg-gradient-to-br from-slate-50 via-white to-primary-50 overflow-hidden">
       {/* Animated Blur Orbs */}
       <div className="absolute top-20 right-10 w-96 h-96 bg-accent-orange-200/30 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-20 left-10 w-80 h-80 bg-primary-200/25 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
