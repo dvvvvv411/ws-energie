@@ -1,18 +1,59 @@
 
 
-# Shop-ID aktualisieren
+# Rebranding Plan: GHS → WS Energie
 
-## Aenderungen
+## Summary
+Global find-and-replace across ~15 files to update company data, prices, brand name, and founding year.
 
-In allen 3 Preisrechner-Komponenten wird die Shop-ID von `5cb5aa20-02d3-4297-a799-19cf1b238a1d` auf `1cafe1ae-a1b5-4265-b146-1bf902702645` geaendert:
+## Changes by Category
 
-1. **`src/components/PriceCalculator.tsx`** (Zeile 22)
-2. **`src/components/HorizontalPriceCalculator.tsx`** (Zeile 19)
-3. **`src/components/MobilePriceCalculator.tsx`** (Zeile 40)
+### 1. Company Name & Brand
+Replace across all files:
+- `GHS Beteiligungs GmbH` → `WS-Energie Verwaltungs-GmbH`
+- `GHS Heizöl` → `WS Energie`
+- `GHS` (in context) → `WS Energie`
 
-Die Checkout-URL zeigt bereits auf `checkout.ghs-heizoel.de` -- keine Aenderung noetig.
+**Files affected:** index.html, Header.tsx, Footer.tsx, HeroSection.tsx, CompanySection.tsx, AboutUs.tsx, Impressum.tsx, Datenschutz.tsx, AGB.tsx, Widerrufsrecht.tsx, ServiceContact.tsx, PriceCalculator.tsx, HorizontalPriceCalculator.tsx, MobilePriceCalculator.tsx
 
-## Technische Details
-- Einfache String-Ersetzung der Shop-ID in 3 Dateien
-- Keine strukturellen Aenderungen
+### 2. Address
+- `Johannes-Kepler-Str. 14` → `Mittlere Bleiche 26`
+- `55129 Mainz` → `55116 Mainz`
+
+**Files:** Footer.tsx, Impressum.tsx, Datenschutz.tsx, AGB.tsx, Widerrufsrecht.tsx, AboutUs.tsx
+
+### 3. Registration & Tax
+- `HRB 3983` → `HRB 43804`
+- `DE243309984` → `DE369810911`
+
+**Files:** Impressum.tsx, AboutUs.tsx
+
+### 4. Contact
+- `06131-6365853` / `+4961316365853` → `06131-8888965` / `+4961318888965`
+- `info@ghs-heizoel.de` → `info@ws-heizoel.de`
+- `ghs-heizoel.de` → `ws-heizoel.de` (including checkout URLs)
+
+**Files:** Header.tsx, Footer.tsx, Impressum.tsx, Datenschutz.tsx, Widerrufsrecht.tsx, AboutUs.tsx, ServiceContact.tsx, DeliverySection.tsx, PriceCalculator.tsx, HorizontalPriceCalculator.tsx, MobilePriceCalculator.tsx
+
+### 5. Geschäftsführung
+Remove the "Geschäftsführung" section (card) from Impressum.tsx. Remove any mention of "Florian Schmitt" across all files.
+
+### 6. Prices
+- `0.60` → `0.90` and `0.63` → `0.93` in PriceCalculator.tsx, HorizontalPriceCalculator.tsx, MobilePriceCalculator.tsx
+- `0.70` → `0.90` and `0.73` → `0.93` in ProductSelector.tsx
+- Update PriceCard examples in DesignSystem.tsx (`0.70` → `0.90`, `0.73` → `0.93`, adjust `originalPrice` proportionally)
+- Update PriceOverviewSection.tsx chart data proportionally (+0.20 across all values)
+
+### 7. Founding Year
+- `2007` → `2013` everywhere (CompanySection.tsx, AboutUs.tsx)
+- `Seit 2007` → `Seit 2013`
+- Adjust "über 18 Jahre" → "über 12 Jahre" and "über 20 Jahren" → "über 12 Jahren"
+
+### 8. Logo imports (variable names only)
+- Rename import aliases `ghsLogo` → `wsLogo` and `ghsLogoFooter` → `wsLogoFooter` in Header.tsx and Footer.tsx (files still reference the same image assets until new logos are provided)
+
+### Technical Notes
+- ~15 files will be modified
+- All changes are string replacements — no structural/logic changes
+- Checkout URLs change from `checkout.ghs-heizoel.de` to `checkout.ws-heizoel.de`
+- Logo image files remain unchanged (user can replace the actual PNG files separately)
 
