@@ -32,7 +32,7 @@ const Footer = () => {
             <img 
               src={wsLogoFooter} 
               alt="WS Energie" 
-              className="h-20 lg:h-24"
+              className="h-12 lg:h-14"
             />
             <p className="text-gray-400 leading-relaxed">
               Ihr zuverlässiger Partner für Heizöl in Deutschland mit über 12 Jahren Erfahrung. 
