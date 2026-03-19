@@ -15,6 +15,7 @@ import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
 import AGB from "./pages/AGB";
 import Widerrufsrecht from "./pages/Widerrufsrecht";
+import Bestellstatus from "./pages/Bestellstatus";
 import NotFound from "./pages/NotFound";
 import CookieConsent from "./components/CookieConsent";
 
