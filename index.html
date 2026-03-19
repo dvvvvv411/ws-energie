@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>GHS Heizöl - Heizöl deutschlandweit günstig bestellen</title>
+    
+    <!-- SEO Meta Tags (Fallback) -->
+    <meta name="description" content="GHS Heizöl - Ihr zuverlässiger Partner für Heizöl in Deutschland. Premium-Qualität, faire Preise und schnelle Lieferung." />
+    <meta name="keywords" content="GHS Heizöl, Heizöl, Deutschland, günstig, Premium, Lieferung, Service" />
+    <meta name="author" content="GHS Beteiligungs GmbH" />
+
+    <!-- Mobile Optimizations -->
+    <meta name="theme-color" content="#006b51" />
+    <meta name="format-detection" content="telephone=yes" />
+    
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Prevent FOUC -->
+    <style>
+      body { visibility: hidden; opacity: 0; }
+      .loading { visibility: visible; opacity: 1; }
+    </style>
+  </head>
+  <body class="loading">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      // Remove loading class when DOM is ready
+      document.addEventListener('DOMContentLoaded', function() {
+        document.body.classList.remove('loading');
+        document.body.style.visibility = 'visible';
+        document.body.style.opacity = '1';
+      });
+    </script>
+  </body>
+</html>
