@@ -11,8 +11,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>GHS Heizöl | Günstig bestellen & schnell geliefert - Deutschlandweit</title>
-        <meta name="description" content="Heizöl günstig online bestellen bei GHS Heizöl. ✓ Deutschlandweite Lieferung ✓ Premium-Qualität ✓ Faire Preise ✓ Über 100.000 zufriedene Kunden. Jetzt Preis berechnen!" />
+        <title>WS Energie | Günstig bestellen & schnell geliefert - Deutschlandweit</title>
+        <meta name="description" content="Heizöl günstig online bestellen bei WS Energie. ✓ Deutschlandweite Lieferung ✓ Premium-Qualität ✓ Faire Preise ✓ Über 100.000 zufriedene Kunden. Jetzt Preis berechnen!" />
       </Helmet>
       <Header />
       <HeroSection />

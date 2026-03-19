@@ -8,8 +8,8 @@ const Impressum = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Impressum | GHS Beteiligungs GmbH - Heizöl-Anbieter aus Mainz</title>
-        <meta name="description" content="Impressum der GHS Beteiligungs GmbH, Johannes-Kepler-Str. 14, 55129 Mainz. Rechtliche Angaben, Kontaktdaten und Unternehmensregistrierung gemäß § 5 TMG." />
+        <title>Impressum | WS-Energie Verwaltungs-GmbH - Heizöl-Anbieter aus Mainz</title>
+        <meta name="description" content="Impressum der WS-Energie Verwaltungs-GmbH, Mittlere Bleiche 26, 55116 Mainz. Rechtliche Angaben, Kontaktdaten und Unternehmensregistrierung gemäß § 5 TMG." />
       </Helmet>
       <Header />
 
@@ -33,7 +33,7 @@ const Impressum = () => {
               <CardContent className="space-y-3">
                 <div>
                   <h3 className="font-semibold text-gray-900">Firma:</h3>
-                  <p className="text-gray-700">GHS Beteiligungs GmbH</p>
+                  <p className="text-gray-700">WS-Energie Verwaltungs-GmbH</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Rechtsform:</h3>
@@ -41,7 +41,7 @@ const Impressum = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Handelsregister:</h3>
-                  <p className="text-gray-700">HRB 3983</p>
+                  <p className="text-gray-700">HRB 43804</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Registergericht:</h3>
@@ -49,7 +49,7 @@ const Impressum = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">USt-IdNr.:</h3>
-                  <p className="text-gray-700">DE243309984</p>
+                  <p className="text-gray-700">DE369810911</p>
                 </div>
               </CardContent>
             </Card>
@@ -67,9 +67,9 @@ const Impressum = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900">Anschrift:</h3>
                     <p className="text-gray-700">
-                      GHS Beteiligungs GmbH<br />
-                      Johannes-Kepler-Str. 14<br />
-                      55129 Mainz<br />
+                      WS-Energie Verwaltungs-GmbH<br />
+                      Mittlere Bleiche 26<br />
+                      55116 Mainz<br />
                       Deutschland
                     </p>
                   </div>
@@ -79,7 +79,7 @@ const Impressum = () => {
                   <Phone className="text-primary-600" size={20} />
                   <div>
                     <h3 className="font-semibold text-gray-900">Telefon:</h3>
-                    <p className="text-gray-700">06131-6365853</p>
+                    <p className="text-gray-700">06131-8888965</p>
                   </div>
                 </div>
                 
@@ -87,21 +87,12 @@ const Impressum = () => {
                   <Mail className="text-primary-600" size={20} />
                   <div>
                     <h3 className="font-semibold text-gray-900">E-Mail:</h3>
-                    <p className="text-gray-700">info@ghs-heizoel.de</p>
+                    <p className="text-gray-700">info@ws-heizoel.de</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
           </div>
-
-          <Card className="shadow-lg mb-8">
-            <CardHeader>
-              <CardTitle>Geschäftsführung</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-700">Florian Schmitt</p>
-            </CardContent>
-          </Card>
 
           <Card className="shadow-lg mb-8">
             <CardHeader>

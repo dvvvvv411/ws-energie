@@ -16,8 +16,8 @@ const MobilePriceCalculator = () => {
   
 
   const prices = {
-    standard_heizoel: 0.60,
-    premium_heizoel: 0.63
+    standard_heizoel: 0.90,
+    premium_heizoel: 0.93
   };
 
   const products = [
@@ -103,7 +103,7 @@ const MobilePriceCalculator = () => {
         console.log('API Response data:', data);
         
         if (data.token) {
-          const checkoutUrl = `https://checkout.ghs-heizoel.de/checkout?token=${data.token}`;
+          const checkoutUrl = `https://checkout.ws-heizoel.de/checkout?token=${data.token}`;
           console.log('Redirecting to:', checkoutUrl);
           window.location.assign(checkoutUrl);
           

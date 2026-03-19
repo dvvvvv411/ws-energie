@@ -28,7 +28,7 @@ const MobileHeader = () => {
           <Link to="/" className="absolute left-1/2 transform -translate-x-1/2 flex items-center">
             <img 
               src="/lovable-uploads/bioheat-logo.png" 
-              alt="BIO HEAT Nord" 
+              alt="WS Energie" 
               className="h-8"
             />
           </Link>
@@ -77,11 +77,11 @@ const MobileHeader = () => {
             {/* Contact Actions */}
             <div className="pt-4 border-t border-gray-200 space-y-2">
               <a
-                href="mailto:info@bioheatnord.de"
+                href="mailto:info@ws-heizoel.de"
                 className="flex items-center py-3 px-4 border border-primary-600 text-primary-600 rounded-lg hover:bg-primary-50 transition-colors min-h-[48px]"
               >
                 <Mail size={20} className="mr-3" />
-                <span className="font-medium">info@bioheatnord.de</span>
+                <span className="font-medium">info@ws-heizoel.de</span>
               </a>
             </div>
           </nav>
