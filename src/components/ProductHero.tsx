@@ -5,7 +5,7 @@ import { Flame, ArrowRight } from 'lucide-react';
 
 const ProductHero = () => {
   return (
-    <section className="relative py-24 md:py-32 bg-gradient-to-br from-slate-50 via-white to-primary-50 overflow-hidden">
+    <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 bg-gradient-to-br from-slate-50 via-white to-primary-50 overflow-hidden">
       {/* Animated gradient orbs */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-primary-200/40 to-accent-orange-200/30 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-accent-orange-200/35 to-primary-200/25 rounded-full blur-3xl" />

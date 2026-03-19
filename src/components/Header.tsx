@@ -68,7 +68,7 @@ const Header = () => {
                 <img 
                   src={wsLogo} 
                   alt="WS Energie"
-                  className="h-28 transition-transform duration-300 group-hover:scale-105"
+                  className="h-16 transition-transform duration-300 group-hover:scale-105"
                 />
               </Link>
             </div>
