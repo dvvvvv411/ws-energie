@@ -1,6 +1,6 @@
 import { Mail, MapPin, Clock, ArrowUpRight, Sparkles, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import ghsLogoFooter from '@/assets/ghs-logo-footer.png';
+import wsLogoFooter from '@/assets/ghs-logo-footer.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -30,16 +30,16 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1 space-y-6">
             <img 
-              src={ghsLogoFooter} 
-              alt="GHS Heizöl" 
+              src={wsLogoFooter} 
+              alt="WS Energie" 
               className="h-20 lg:h-24"
             />
             <p className="text-gray-400 leading-relaxed">
-              Ihr zuverlässiger Partner für Heizöl in Deutschland mit über 20 Jahren Erfahrung. 
+              Ihr zuverlässiger Partner für Heizöl in Deutschland mit über 12 Jahren Erfahrung. 
               Qualität, Service und faire Preise.
             </p>
             <div className="pt-2">
-              <div className="font-semibold text-white">GHS Beteiligungs GmbH</div>
+              <div className="font-semibold text-white">WS-Energie Verwaltungs-GmbH</div>
               <div className="text-sm text-gray-500">Deutschlands Heizöl-Experte</div>
             </div>
           </div>
@@ -70,21 +70,21 @@ const Footer = () => {
                 <div className="w-10 h-10 rounded-xl bg-primary-900/50 flex items-center justify-center">
                   <Phone size={18} className="text-primary-400" />
                 </div>
-                <a href="tel:+4961316365853" className="hover:text-white transition-colors">06131-6365853</a>
+                <a href="tel:+4961318888965" className="hover:text-white transition-colors">06131-8888965</a>
               </div>
               <div className="flex items-center gap-3 text-gray-400">
                 <div className="w-10 h-10 rounded-xl bg-primary-900/50 flex items-center justify-center">
                   <Mail size={18} className="text-primary-400" />
                 </div>
-                <span>info@ghs-heizoel.de</span>
+                <span>info@ws-heizoel.de</span>
               </div>
               <div className="flex items-start gap-3 text-gray-400">
                 <div className="w-10 h-10 rounded-xl bg-accent-orange-900/50 flex items-center justify-center flex-shrink-0">
                   <MapPin size={18} className="text-accent-orange-400" />
                 </div>
                 <div>
-                  <div>Johannes-Kepler-Str. 14</div>
-                  <div>55129 Mainz</div>
+                  <div>Mittlere Bleiche 26</div>
+                  <div>55116 Mainz</div>
                 </div>
               </div>
             </div>
@@ -127,7 +127,7 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t border-gray-800/50">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
             <div className="text-gray-500 text-sm">
-              © {currentYear} GHS Beteiligungs GmbH. Alle Rechte vorbehalten.
+              © {currentYear} WS-Energie Verwaltungs-GmbH. Alle Rechte vorbehalten.
             </div>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
               {legalLinks.map((link, index) => (

@@ -16,7 +16,7 @@ const DesignSystem = () => {
         {/* Header */}
         <div className="text-center">
           <Typography variant="h1" className="mb-4">
-            BIO HEAT Nord Design System
+            WS Energie Design System
           </Typography>
           <Typography variant="body" color="secondary" className="max-w-2xl mx-auto">
             Ein einheitliches Design System für die Heizöl-Website mit modernen Komponenten,
@@ -138,7 +138,7 @@ const DesignSystem = () => {
           <div className="grid md:grid-cols-3 gap-6">
             <PriceCard
               title="Standard Heizöl"
-              price={0.70}
+              price={0.90}
               unit="Liter"
               features={[
                 "DIN-geprüfte Qualität",
@@ -150,8 +150,8 @@ const DesignSystem = () => {
             />
             <PriceCard
               title="Premium Heizöl"
-              price={0.73}
-              originalPrice={0.78}
+              price={0.93}
+              originalPrice={0.98}
               unit="Liter"
               popular={true}
               badge="Bestseller"
@@ -166,7 +166,7 @@ const DesignSystem = () => {
             />
             <PriceCard
               title="Eco Heizöl"
-              price={0.75}
+              price={0.95}
               unit="Liter"
               badge="Umweltfreundlich"
               features={[
@@ -235,7 +235,7 @@ const DesignSystem = () => {
               name="Hans Mueller"
               location="München"
               rating={5}
-              testimonial="Super Service! Schnelle Lieferung und faire Preise. Kann HILL-Clear nur weiterempfehlen."
+              testimonial="Super Service! Schnelle Lieferung und faire Preise. Kann WS Energie nur weiterempfehlen."
               date="vor 2 Wochen"
             />
             <TestimonialCard

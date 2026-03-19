@@ -8,7 +8,7 @@ const ServiceContact = () => {
     {
       icon: Mail,
       title: 'Online-Service',
-      info: 'info@ghs-heizoel.de',
+      info: 'info@ws-heizoel.de',
       description: 'E-Mail-Anfragen und Online-Bestellung',
       availability: 'Antwort innerhalb 2 Stunden',
       gradient: 'from-primary-500 to-primary-600'

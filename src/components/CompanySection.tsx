@@ -5,9 +5,9 @@ const CompanySection = () => {
   const stats = [
     {
       icon: Building,
-      number: '2007',
+      number: '2013',
       label: 'Gegründet',
-      description: 'Über 18 Jahre Erfahrung'
+      description: 'Über 12 Jahre Erfahrung'
     },
     {
       icon: Users,
@@ -61,10 +61,10 @@ const CompanySection = () => {
             Über uns
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Über <span className="gradient-text-premium">GHS Heizöl</span>
+            Über <span className="gradient-text-premium">WS Energie</span>
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Ihr zuverlässiger Partner für Heizöl in Deutschland mit über 20 Jahren Erfahrung. 
+            Ihr zuverlässiger Partner für Heizöl in Deutschland mit über 12 Jahren Erfahrung. 
             Wir stehen für Qualität, Service und faire Preise.
           </p>
         </div>
@@ -78,7 +78,7 @@ const CompanySection = () => {
             </h3>
             
             <p className="text-gray-600 text-lg leading-relaxed">
-              Seit der Gründung im Jahr <span className="font-semibold text-primary-600">2007</span> haben wir uns zu einem der führenden Heizöl-Anbieter in Deutschland entwickelt. Was als Unternehmen in Mainz begann, ist heute ein zuverlässiger Partner für über <span className="font-semibold text-accent-orange-600">100.000 Kunden</span> deutschlandweit. Unser Erfolgsrezept: <span className="font-semibold text-gray-900">Erstklassige Qualität</span> zu fairen Preisen, <span className="font-semibold text-gray-900">persönlicher Service</span> und ein erfahrenes Team mit über <span className="font-semibold text-primary-600">20 Jahren Erfahrung</span>. Als bundesweit agierendes Unternehmen kennen wir die Bedürfnisse unserer Kunden genau und leisten einen wichtigen Beitrag zur Energieversorgung in ganz Deutschland.
+              Seit der Gründung im Jahr <span className="font-semibold text-primary-600">2013</span> haben wir uns zu einem der führenden Heizöl-Anbieter in Deutschland entwickelt. Was als Unternehmen in Mainz begann, ist heute ein zuverlässiger Partner für über <span className="font-semibold text-accent-orange-600">100.000 Kunden</span> deutschlandweit. Unser Erfolgsrezept: <span className="font-semibold text-gray-900">Erstklassige Qualität</span> zu fairen Preisen, <span className="font-semibold text-gray-900">persönlicher Service</span> und ein erfahrenes Team mit über <span className="font-semibold text-primary-600">12 Jahren Erfahrung</span>. Als bundesweit agierendes Unternehmen kennen wir die Bedürfnisse unserer Kunden genau und leisten einen wichtigen Beitrag zur Energieversorgung in ganz Deutschland.
             </p>
           </div>
 
@@ -86,7 +86,7 @@ const CompanySection = () => {
           <div className="relative flex items-center justify-center">
             <img 
               src={shopHeaderImage} 
-              alt="GHS Heizöl Unternehmen"
+              alt="WS Energie Unternehmen"
               className="max-w-[92%] h-auto object-contain transition-transform duration-700 hover:scale-105"
             />
           </div>
@@ -114,7 +114,7 @@ const CompanySection = () => {
           })}
         </div>
 
-        {/* Values Section - Minimalistisches Design */}
+        {/* Values Section */}
         <div className="mt-8">
           <h3 className="text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-16">
             Unsere <span className="gradient-text-premium">Werte</span>
@@ -123,12 +123,10 @@ const CompanySection = () => {
           <div className="grid md:grid-cols-3 gap-12 lg:gap-16">
             {values.map((value, index) => (
               <div key={index} className="group relative pt-4">
-                {/* Große Nummer im Hintergrund */}
                 <span className="absolute -top-6 -left-2 text-8xl lg:text-9xl font-bold text-gray-100 select-none pointer-events-none group-hover:text-primary-100 transition-colors duration-500">
                   {value.number}
                 </span>
                 
-                {/* Content mit vertikaler Linie */}
                 <div className="relative pl-6 border-l-4 border-gray-200 group-hover:border-primary-500 transition-all duration-300">
                   <h4 className="text-2xl font-bold text-gray-900 mb-3 tracking-tight uppercase group-hover:text-primary-600 transition-colors duration-300">
                     {value.title}

@@ -12,8 +12,8 @@ const HorizontalPriceCalculator = () => {
   const { toast } = useToast();
 
   const prices = {
-    standard_heizoel: 0.60,
-    premium_heizoel: 0.63
+    standard_heizoel: 0.90,
+    premium_heizoel: 0.93
   };
 
   const shopId = "1cafe1ae-a1b5-4265-b146-1bf902702645";
@@ -66,7 +66,7 @@ const HorizontalPriceCalculator = () => {
         const data = await response.json();
         
         if (data.token) {
-          const checkoutUrl = `https://checkout.ghs-heizoel.de/checkout?token=${data.token}`;
+          const checkoutUrl = `https://checkout.ws-heizoel.de/checkout?token=${data.token}`;
           window.location.assign(checkoutUrl);
           
           toast({
@@ -83,7 +83,7 @@ const HorizontalPriceCalculator = () => {
       console.error('Order error:', error);
       toast({
         title: "Fehler bei der Bestellung",
-        description: "Bitte versuchen Sie es später erneut oder kontaktieren Sie uns per E-Mail an info@ghs-heizoel.de.",
+        description: "Bitte versuchen Sie es später erneut oder kontaktieren Sie uns per E-Mail an info@ws-heizoel.de.",
         variant: "destructive"
       });
     } finally {

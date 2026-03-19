@@ -12,14 +12,13 @@ import PriceCalculator from './PriceCalculator';
 const PriceOverviewSection = () => {
   const [activeTab, setActiveTab] = useState('prices');
 
-  // Preisentwicklung Mock-Daten
   const priceHistory = [
-    { month: 'Jan', standard: 0.68, premium: 0.71 },
-    { month: 'Feb', standard: 0.69, premium: 0.72 },
-    { month: 'Mär', standard: 0.67, premium: 0.70 },
-    { month: 'Apr', standard: 0.70, premium: 0.73 },
-    { month: 'Mai', standard: 0.72, premium: 0.75 },
-    { month: 'Jun', standard: 0.70, premium: 0.73 },
+    { month: 'Jan', standard: 0.88, premium: 0.91 },
+    { month: 'Feb', standard: 0.89, premium: 0.92 },
+    { month: 'Mär', standard: 0.87, premium: 0.90 },
+    { month: 'Apr', standard: 0.90, premium: 0.93 },
+    { month: 'Mai', standard: 0.92, premium: 0.95 },
+    { month: 'Jun', standard: 0.90, premium: 0.93 },
   ];
 
   const chartConfig = {
@@ -34,10 +33,10 @@ const PriceOverviewSection = () => {
   };
 
   const quantityDiscounts = [
-    { range: '500-999L', discount: '0%', price: '0,70€/L' },
-    { range: '1000-1999L', discount: '2%', price: '0,69€/L' },
-    { range: '2000-2999L', discount: '3%', price: '0,68€/L' },
-    { range: '3000L+', discount: '5%', price: '0,67€/L' },
+    { range: '500-999L', discount: '0%', price: '0,90€/L' },
+    { range: '1000-1999L', discount: '2%', price: '0,88€/L' },
+    { range: '2000-2999L', discount: '3%', price: '0,87€/L' },
+    { range: '3000L+', discount: '5%', price: '0,86€/L' },
   ];
 
   const paymentOptions = [
@@ -83,13 +82,12 @@ const PriceOverviewSection = () => {
           </TabsList>
 
           <TabsContent value="prices" className="space-y-8">
-            {/* Aktuelle Preise */}
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="border-primary-200 shadow-lg">
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl text-primary-600">Standard Heizöl</CardTitle>
                   <div className="text-4xl font-bold text-gray-900">
-                    ab 0,70€
+                    ab 0,90€
                     <span className="text-lg text-gray-600">/Liter</span>
                   </div>
                 </CardHeader>
@@ -116,7 +114,7 @@ const PriceOverviewSection = () => {
                   <Badge className="mb-2 bg-primary-600">PREMIUM QUALITÄT</Badge>
                   <CardTitle className="text-2xl text-primary-600">Premium Heizöl</CardTitle>
                   <div className="text-4xl font-bold text-gray-900">
-                    ab 0,73€
+                    ab 0,93€
                     <span className="text-lg text-gray-600">/Liter</span>
                   </div>
                 </CardHeader>
@@ -139,7 +137,6 @@ const PriceOverviewSection = () => {
               </Card>
             </div>
 
-            {/* Mengenrabatte */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center">
@@ -162,7 +159,6 @@ const PriceOverviewSection = () => {
               </CardContent>
             </Card>
 
-            {/* Preisentwicklung */}
             <Card>
               <CardHeader>
                 <CardTitle>Preisentwicklung der letzten 6 Monate</CardTitle>
@@ -227,10 +223,10 @@ const PriceOverviewSection = () => {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <p className="font-semibold">Green Oil Trade and Service GmbH</p>
-                    <p className="text-gray-600">Sparkasse Nürnberg</p>
+                    <p className="font-semibold">WS-Energie Verwaltungs-GmbH</p>
+                    <p className="text-gray-600">Sparkasse Mainz</p>
                     <p className="text-gray-600">IBAN: DE89 7015 0000 1234 5678 90</p>
-                    <p className="text-gray-600">BIC: SSKMDEMMXXX</p>
+                    <p className="text-gray-600">BIC: MAABORSMXXX</p>
                   </div>
                   <div>
                     <p className="text-sm text-gray-600">
@@ -264,7 +260,7 @@ const PriceOverviewSection = () => {
                     </li>
                     <li className="flex items-center">
                       <CheckCircle size={16} className="text-green-600 mr-2" />
-                      Preise gelten für ganz Bayern
+                      Preise gelten für ganz Deutschland
                     </li>
                     <li className="flex items-center">
                       <CheckCircle size={16} className="text-green-600 mr-2" />
@@ -315,7 +311,7 @@ const PriceOverviewSection = () => {
                     Bis zu 15% günstiger
                   </div>
                   <p className="text-gray-600 mb-4">
-                    als der Durchschnitt unserer Mitbewerber in Bayern
+                    als der Durchschnitt unserer Mitbewerber in Deutschland
                   </p>
                   <Badge className="bg-primary-600">
                     Basierend auf Marktanalyse vom Juni 2024

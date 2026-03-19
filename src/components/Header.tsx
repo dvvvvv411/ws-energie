@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from "@/lib/utils";
 import { scrollToCalculator, scrollToCalculatorFromOtherPage } from '../utils/scrollToCalculator';
-import ghsLogo from '@/assets/ghs-logo.png';
+import wsLogo from '@/assets/ghs-logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,13 +45,13 @@ const Header = () => {
           )}>
             <div className="flex justify-between items-center text-sm text-gray-600">
               <div className="flex items-center space-x-6">
-                <a href="tel:+4961316365853" className="flex items-center space-x-2 hover:text-primary-600 transition-colors">
+                <a href="tel:+4961318888965" className="flex items-center space-x-2 hover:text-primary-600 transition-colors">
                   <Phone size={14} className="text-accent-orange-500" />
-                  <span>06131-6365853</span>
+                  <span>06131-8888965</span>
                 </a>
                 <div className="flex items-center space-x-2">
                   <Bell size={14} className="text-accent-orange-500" />
-                  <span>info@ghs-heizoel.de</span>
+                  <span>info@ws-heizoel.de</span>
                 </div>
               </div>
               <div className="flex items-center gap-2 text-accent-orange-600 font-medium">
@@ -66,8 +66,8 @@ const Header = () => {
             <div className="flex items-center gap-6">
               <Link to="/" className="flex items-center group">
                 <img 
-                  src={ghsLogo} 
-                  alt="GHS Heizöl"
+                  src={wsLogo} 
+                  alt="WS Energie"
                   className="h-28 transition-transform duration-300 group-hover:scale-105"
                 />
               </Link>
@@ -130,8 +130,8 @@ const Header = () => {
             {/* Logo - Mittig zentriert */}
             <Link to="/" className="absolute left-1/2 transform -translate-x-1/2 flex items-center">
               <img 
-                src={ghsLogo} 
-                alt="GHS Heizöl" 
+                src={wsLogo} 
+                alt="WS Energie" 
                 className="h-18"
               />
             </Link>
