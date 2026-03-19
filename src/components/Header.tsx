@@ -75,14 +75,15 @@ const Header = () => {
 
             <nav className="flex items-center space-x-2">
               {[
-                { to: '/', label: 'Startseite' },
+              { to: '/', label: 'Startseite' },
                 { to: '/produkte', label: 'Produkte' },
                 { to: '/services', label: 'Services' },
-                { to: '/ueber-uns', label: 'Über uns' }
+                { to: '/ueber-uns', label: 'Über uns' },
+                { to: '/bestellstatus', label: 'Bestellstatus' }
               ].map((item) => (
                 <Link 
                   key={item.to}
-                  to={item.to} 
+                  to={item.to}
                   className={cn(
                     "relative px-4 py-2 text-gray-700 font-medium transition-all duration-300 rounded-lg group",
                     location.pathname === item.to ? "text-primary-600" : "hover:text-primary-600"
@@ -147,7 +148,8 @@ const Header = () => {
                 { to: '/', label: 'Startseite' },
                 { to: '/produkte', label: 'Produkte' },
                 { to: '/services', label: 'Services' },
-                { to: '/ueber-uns', label: 'Über uns' }
+                { to: '/ueber-uns', label: 'Über uns' },
+                { to: '/bestellstatus', label: 'Bestellstatus' }
               ].map((item, index) => (
                 <Link 
                   key={item.to}
