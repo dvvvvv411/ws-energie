@@ -21,7 +21,7 @@ const AboutUs = () => {
       const stepDuration = duration / steps;
       
       const targets = {
-        years: 12,
+        years: 4,
         customers: 100000,
         rating: 4.9,
         deliveries: 200000
@@ -106,8 +106,8 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Über uns | WS Energie - Seit 2013 Ihr Partner für Heizöl</title>
-        <meta name="description" content="Lernen Sie die WS-Energie Verwaltungs-GmbH kennen: Über 12 Jahre Erfahrung, 100.000+ zufriedene Kunden und deutschlandweite Lieferung. Qualität, Service und faire Preise aus Mainz." />
+        <title>Über uns | Antpire GmbH - Seit 2021 Ihr Partner für Heizöl</title>
+        <meta name="description" content="Lernen Sie die Antpire GmbH kennen: Über 4 Jahre Erfahrung, 100.000+ zufriedene Kunden und deutschlandweite Lieferung. Qualität, Service und faire Preise aus Waghäusel." />
       </Helmet>
       <Header />
 
@@ -125,10 +125,10 @@ const AboutUs = () => {
           </div>
           
           <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Über <span className="gradient-text-premium">WS-Energie Verwaltungs-GmbH</span>
+            Über <span className="gradient-text-premium">Antpire GmbH</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
-            Seit 2013 Ihr zuverlässiger Partner für Premium-Heizöl in Deutschland. 
+            Seit 2021 Ihr zuverlässiger Partner für Premium-Heizöl in Deutschland. 
             Qualität, Service und faire Preise sind unser Versprechen an Sie.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -137,7 +137,7 @@ const AboutUs = () => {
               className="bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl px-8"
             >
               <Mail className="mr-2" size={20} />
-              info@ws-heizoel.de
+              info@antpiregmbh.de
             </Button>
           </div>
         </div>
@@ -190,13 +190,13 @@ const AboutUs = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8 leading-tight">
-                Von <span className="gradient-text-premium">Mainz</span> nach ganz Deutschland
+                Von <span className="gradient-text-premium">Waghäusel</span> nach ganz Deutschland
               </h2>
               <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                 <p>
-                  Im Jahr <span className="font-semibold text-primary-600">2013</span> wurde die WS-Energie Verwaltungs-GmbH mit dem Ziel gegründet, 
+                  Im Jahr <span className="font-semibold text-primary-600">2021</span> wurde die Antpire GmbH mit dem Ziel gegründet, 
                   Kunden in Deutschland mit hochwertigem Heizöl zu fairen Preisen zu versorgen. 
-                  Was als Unternehmen in Mainz begann, hat sich zu einem der 
+                  Was als Unternehmen in Waghäusel begann, hat sich zu einem der 
                   führenden Heizöl-Anbieter in der Region entwickelt.
                 </p>
                 <p>
@@ -208,7 +208,7 @@ const AboutUs = () => {
                 <p>
                   Mit über <span className="font-semibold text-accent-orange-600">100.000 zufriedenen Kunden</span> und mehr als 
                   <span className="font-semibold text-accent-orange-600"> 200.000 erfolgreichen Lieferungen</span> haben wir uns das 
-                  Vertrauen der Menschen in Deutschland verdient. Unser Team mit über 12 Jahren 
+                  Vertrauen der Menschen in Deutschland verdient. Unser Team mit über 4 Jahren 
                   Branchenerfahrung steht Ihnen jederzeit mit Rat und Tat zur Seite.
                 </p>
               </div>
@@ -218,12 +218,12 @@ const AboutUs = () => {
                 <div className="w-24 h-24 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center shadow-lg">
                   <Building size={48} className="text-white" />
                 </div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-2">WS Energie</h3>
-                <p className="text-xl text-primary-600 font-semibold mb-6">WS-Energie Verwaltungs-GmbH</p>
+                <h3 className="text-3xl font-bold text-gray-900 mb-2">Antpire</h3>
+                <p className="text-xl text-primary-600 font-semibold mb-6">Antpire GmbH</p>
                 <div className="space-y-3 text-gray-600">
                   <div className="flex items-center justify-center gap-2">
                     <MapPin className="w-5 h-5 text-primary-500" />
-                    <span>Seit 2013 in Mainz</span>
+                    <span>Seit 2021 in Waghäusel</span>
                   </div>
                   <div className="flex items-center justify-center gap-2">
                     <Award className="w-5 h-5 text-accent-orange-500" />
@@ -249,7 +249,7 @@ const AboutUs = () => {
               Warum wir?
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Warum <span className="gradient-text-premium">WS Energie</span> wählen?
+              Warum <span className="gradient-text-premium">Antpire</span> wählen?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Wir bieten Ihnen mehr als nur Heizöl - wir bieten Ihnen Sicherheit, 
@@ -405,7 +405,7 @@ const AboutUs = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-50 rounded-full text-primary-700 text-sm font-semibold mb-6">
               <Building className="w-4 h-4" />
-              WS-Energie Verwaltungs-GmbH
+              Antpire GmbH
             </div>
           </div>
           
@@ -413,7 +413,7 @@ const AboutUs = () => {
             <div className="premium-card rounded-3xl p-8 lg:p-12">
               <div className="text-center mb-10">
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  <span className="gradient-text-premium">WS-Energie Verwaltungs-GmbH</span>
+                  <span className="gradient-text-premium">Antpire GmbH</span>
                 </h2>
                 <p className="text-xl text-gray-600">
                   Ihr Partner für Heizöl in Deutschland
@@ -429,9 +429,9 @@ const AboutUs = () => {
                     <h3 className="text-xl font-bold text-gray-900">Anschrift</h3>
                   </div>
                   <div className="space-y-2 text-gray-600 pl-13">
-                    <p>WS-Energie Verwaltungs-GmbH</p>
-                    <p>Mittlere Bleiche 26</p>
-                    <p>55116 Mainz</p>
+                    <p>Antpire GmbH</p>
+                    <p>Franz-Sigel-Str. 20</p>
+                    <p>68753 Waghäusel</p>
                     <p>Deutschland</p>
                   </div>
                 </div>
@@ -444,7 +444,7 @@ const AboutUs = () => {
                     <h3 className="text-xl font-bold text-gray-900">Kontakt</h3>
                   </div>
                   <div className="space-y-3 text-gray-600">
-                    <p>info@ws-heizoel.de</p>
+                    <p>info@antpiregmbh.de</p>
                   </div>
                 </div>
 
@@ -456,9 +456,10 @@ const AboutUs = () => {
                     <h3 className="text-xl font-bold text-gray-900">Handelsregister</h3>
                   </div>
                   <div className="space-y-2 text-gray-600">
-                    <p>HRB 43804</p>
-                    <p>Amtsgericht Mainz</p>
-                    <p>USt-IdNr.: DE369810911</p>
+                    <p>HRB 740142</p>
+                    <p>Amtsgericht Mannheim</p>
+                    <p>USt-IdNr.: DE455291518</p>
+                    <p className="pt-1"><span className="font-semibold">Geschäftsführer:</span> Michael Weyrauch</p>
                   </div>
                 </div>
 
