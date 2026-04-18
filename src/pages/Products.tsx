@@ -13,7 +13,7 @@ const Products = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Heizöl-Sorten | Standard, Premium & Bio-Heizöl - WS Energie</title>
+        <title>Heizöl-Sorten | Standard, Premium & Bio-Heizöl - Antpire GmbH</title>
         <meta name="description" content="Unsere Heizöl-Qualitäten im Vergleich: Standard-Heizöl, Premium mit Additiven und Bio-Heizöl. ✓ DIN-zertifiziert ✓ Technische Daten ✓ Lagerungsempfehlungen." />
       </Helmet>
       <Header />

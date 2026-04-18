@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Bell, Sparkles, Phone } from 'lucide-react';
+import { Menu, X, Bell, Sparkles } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from "@/lib/utils";
 import { scrollToCalculator, scrollToCalculatorFromOtherPage } from '../utils/scrollToCalculator';
-import wsLogo from '@/assets/ghs-logo.png';
+import AntpireLogo from './AntpireLogo';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,13 +45,9 @@ const Header = () => {
           )}>
             <div className="flex justify-between items-center text-sm text-gray-600">
               <div className="flex items-center space-x-6">
-                <a href="tel:+4961318888965" className="flex items-center space-x-2 hover:text-primary-600 transition-colors">
-                  <Phone size={14} className="text-accent-orange-500" />
-                  <span>06131-8888965</span>
-                </a>
                 <div className="flex items-center space-x-2">
                   <Bell size={14} className="text-accent-orange-500" />
-                  <span>info@ws-heizoel.de</span>
+                  <span>info@antpiregmbh.de</span>
                 </div>
               </div>
               <div className="flex items-center gap-2 text-accent-orange-600 font-medium">
@@ -65,11 +61,7 @@ const Header = () => {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center gap-6">
               <Link to="/" className="flex items-center group">
-                <img 
-                  src={wsLogo} 
-                  alt="WS Energie"
-                  className="h-16 transition-transform duration-300 group-hover:scale-105"
-                />
+                <AntpireLogo size="lg" className="transition-transform duration-300 group-hover:scale-105" />
               </Link>
             </div>
 
@@ -130,11 +122,7 @@ const Header = () => {
 
             {/* Logo - Mittig zentriert */}
             <Link to="/" className="absolute left-1/2 transform -translate-x-1/2 flex items-center">
-              <img 
-                src={wsLogo} 
-                alt="WS Energie" 
-                className="h-18"
-              />
+              <AntpireLogo size="md" />
             </Link>
           </div>
 

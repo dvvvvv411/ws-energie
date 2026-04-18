@@ -2,14 +2,14 @@ import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Building, Mail, MapPin, Phone } from 'lucide-react';
+import { Building, Mail, MapPin, User } from 'lucide-react';
 
 const Impressum = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Impressum | WS-Energie Verwaltungs-GmbH - Heizöl-Anbieter aus Mainz</title>
-        <meta name="description" content="Impressum der WS-Energie Verwaltungs-GmbH, Mittlere Bleiche 26, 55116 Mainz. Rechtliche Angaben, Kontaktdaten und Unternehmensregistrierung gemäß § 5 TMG." />
+        <title>Impressum | Antpire GmbH - Heizöl-Anbieter aus Waghäusel</title>
+        <meta name="description" content="Impressum der Antpire GmbH, Franz-Sigel-Str. 20, 68753 Waghäusel. Rechtliche Angaben, Kontaktdaten und Unternehmensregistrierung gemäß § 5 TMG." />
       </Helmet>
       <Header />
 
@@ -33,7 +33,7 @@ const Impressum = () => {
               <CardContent className="space-y-3">
                 <div>
                   <h3 className="font-semibold text-gray-900">Firma:</h3>
-                  <p className="text-gray-700">WS-Energie Verwaltungs-GmbH</p>
+                  <p className="text-gray-700">Antpire GmbH</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Rechtsform:</h3>
@@ -41,15 +41,22 @@ const Impressum = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Handelsregister:</h3>
-                  <p className="text-gray-700">HRB 43804</p>
+                  <p className="text-gray-700">HRB 740142</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Registergericht:</h3>
-                  <p className="text-gray-700">Amtsgericht Mainz</p>
+                  <p className="text-gray-700">Amtsgericht Mannheim</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">USt-IdNr.:</h3>
-                  <p className="text-gray-700">DE369810911</p>
+                  <p className="text-gray-700">DE455291518</p>
+                </div>
+                <div className="pt-2 border-t border-gray-100">
+                  <h3 className="font-semibold text-gray-900 flex items-center gap-2">
+                    <User size={16} className="text-primary-600" />
+                    Geschäftsführer:
+                  </h3>
+                  <p className="text-gray-700">Michael Weyrauch</p>
                 </div>
               </CardContent>
             </Card>
@@ -67,19 +74,11 @@ const Impressum = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900">Anschrift:</h3>
                     <p className="text-gray-700">
-                      WS-Energie Verwaltungs-GmbH<br />
-                      Mittlere Bleiche 26<br />
-                      55116 Mainz<br />
+                      Antpire GmbH<br />
+                      Franz-Sigel-Str. 20<br />
+                      68753 Waghäusel<br />
                       Deutschland
                     </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-3">
-                  <Phone className="text-primary-600" size={20} />
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Telefon:</h3>
-                    <p className="text-gray-700">06131-8888965</p>
                   </div>
                 </div>
                 
@@ -87,7 +86,7 @@ const Impressum = () => {
                   <Mail className="text-primary-600" size={20} />
                   <div>
                     <h3 className="font-semibold text-gray-900">E-Mail:</h3>
-                    <p className="text-gray-700">info@ws-heizoel.de</p>
+                    <p className="text-gray-700">info@antpiregmbh.de</p>
                   </div>
                 </div>
               </CardContent>

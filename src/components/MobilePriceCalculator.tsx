@@ -103,7 +103,7 @@ const MobilePriceCalculator = () => {
         console.log('API Response data:', data);
         
         if (data.token) {
-          const checkoutUrl = `https://checkout.ws-heizoel.de/checkout?token=${data.token}`;
+          const checkoutUrl = `https://checkout.antpiregmbh.de/checkout?token=${data.token}`;
           console.log('Redirecting to:', checkoutUrl);
           window.location.assign(checkoutUrl);
           
@@ -123,7 +123,7 @@ const MobilePriceCalculator = () => {
       console.error('Order error:', error);
       toast({
         title: "Fehler bei der Bestellung",
-        description: "Bitte versuchen Sie es später erneut oder rufen Sie uns an.",
+        description: "Bitte versuchen Sie es später erneut oder kontaktieren Sie uns per E-Mail an info@antpiregmbh.de.",
         variant: "destructive"
       });
     } finally {

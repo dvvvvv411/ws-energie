@@ -26,8 +26,8 @@ const BenefitsSection = () => {
     },
     {
       icon: Award,
-      title: 'Über 20 Jahre Erfahrung',
-      description: 'Zuverlässiger Partner für Heizöl in Deutschland seit 2016',
+      title: 'Seit 2021 zuverlässig',
+      description: 'Zuverlässiger Partner für Heizöl in Deutschland seit 2021',
       gradient: 'from-rose-500 to-rose-600',
       bgLight: 'bg-rose-50',
     },
@@ -61,7 +61,7 @@ const BenefitsSection = () => {
             Unsere Vorteile
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Warum <span className="gradient-text-premium">WS Energie</span>?
+            Warum <span className="gradient-text-premium">Antpire</span>?
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed">
             Als führender Heizöl-Anbieter in Deutschland stehen wir für Qualität, Zuverlässigkeit 

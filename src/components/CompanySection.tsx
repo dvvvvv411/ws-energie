@@ -1,13 +1,13 @@
-import { Building, Users, Award, Clock, ArrowUpRight } from 'lucide-react';
+import { Building, Users, Award, Clock } from 'lucide-react';
 import shopHeaderImage from '@/assets/shop-header.jpg';
 
 const CompanySection = () => {
   const stats = [
     {
       icon: Building,
-      number: '2013',
+      number: '2021',
       label: 'Gegründet',
-      description: 'Über 12 Jahre Erfahrung'
+      description: 'Über 4 Jahre Erfahrung'
     },
     {
       icon: Users,
@@ -61,10 +61,10 @@ const CompanySection = () => {
             Über uns
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Über <span className="gradient-text-premium">WS Energie</span>
+            Über <span className="gradient-text-premium">Antpire</span>
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Ihr zuverlässiger Partner für Heizöl in Deutschland mit über 12 Jahren Erfahrung. 
+            Ihr zuverlässiger Partner für Heizöl in Deutschland mit über 4 Jahren Erfahrung. 
             Wir stehen für Qualität, Service und faire Preise.
           </p>
         </div>
@@ -78,7 +78,7 @@ const CompanySection = () => {
             </h3>
             
             <p className="text-gray-600 text-lg leading-relaxed">
-              Seit der Gründung im Jahr <span className="font-semibold text-primary-600">2013</span> haben wir uns zu einem der führenden Heizöl-Anbieter in Deutschland entwickelt. Was als Unternehmen in Mainz begann, ist heute ein zuverlässiger Partner für über <span className="font-semibold text-accent-orange-600">100.000 Kunden</span> deutschlandweit. Unser Erfolgsrezept: <span className="font-semibold text-gray-900">Erstklassige Qualität</span> zu fairen Preisen, <span className="font-semibold text-gray-900">persönlicher Service</span> und ein erfahrenes Team mit über <span className="font-semibold text-primary-600">12 Jahren Erfahrung</span>. Als bundesweit agierendes Unternehmen kennen wir die Bedürfnisse unserer Kunden genau und leisten einen wichtigen Beitrag zur Energieversorgung in ganz Deutschland.
+              Seit der Gründung im Jahr <span className="font-semibold text-primary-600">2021</span> haben wir uns zu einem der führenden Heizöl-Anbieter in Deutschland entwickelt. Was als Unternehmen in Waghäusel begann, ist heute ein zuverlässiger Partner für über <span className="font-semibold text-accent-orange-600">100.000 Kunden</span> deutschlandweit. Unser Erfolgsrezept: <span className="font-semibold text-gray-900">Erstklassige Qualität</span> zu fairen Preisen, <span className="font-semibold text-gray-900">persönlicher Service</span> und ein erfahrenes Team mit über <span className="font-semibold text-primary-600">4 Jahren Erfahrung</span>. Als bundesweit agierendes Unternehmen kennen wir die Bedürfnisse unserer Kunden genau und leisten einen wichtigen Beitrag zur Energieversorgung in ganz Deutschland.
             </p>
           </div>
 
@@ -86,7 +86,7 @@ const CompanySection = () => {
           <div className="relative flex items-center justify-center">
             <img 
               src={shopHeaderImage} 
-              alt="WS Energie Unternehmen"
+              alt="Antpire GmbH Unternehmen"
               className="max-w-[92%] h-auto object-contain transition-transform duration-700 hover:scale-105"
             />
           </div>
