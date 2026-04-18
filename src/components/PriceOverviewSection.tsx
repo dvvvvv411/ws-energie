@@ -223,8 +223,8 @@ const PriceOverviewSection = () => {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <p className="font-semibold">WS-Energie Verwaltungs-GmbH</p>
-                    <p className="text-gray-600">Sparkasse Mainz</p>
+                    <p className="font-semibold">Antpire GmbH</p>
+                    <p className="text-gray-600">Sparkasse</p>
                     <p className="text-gray-600">IBAN: DE89 7015 0000 1234 5678 90</p>
                     <p className="text-gray-600">BIC: MAABORSMXXX</p>
                   </div>

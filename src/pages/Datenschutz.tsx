@@ -8,8 +8,8 @@ const Datenschutz = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Datenschutzerklärung | WS Energie - DSGVO-konform</title>
-        <meta name="description" content="Datenschutzerklärung der WS-Energie Verwaltungs-GmbH gemäß DSGVO. Informationen zur Datenverarbeitung, Ihren Rechten und Kontaktmöglichkeiten für Datenschutzanfragen." />
+        <title>Datenschutzerklärung | Antpire GmbH - DSGVO-konform</title>
+        <meta name="description" content="Datenschutzerklärung der Antpire GmbH gemäß DSGVO. Informationen zur Datenverarbeitung, Ihren Rechten und Kontaktmöglichkeiten für Datenschutzanfragen." />
       </Helmet>
       <Header />
 
@@ -31,12 +31,13 @@ const Datenschutz = () => {
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
-                <p className="font-semibold">WS-Energie Verwaltungs-GmbH</p>
-                <p>Mittlere Bleiche 26</p>
-                <p>55116 Mainz</p>
+                <p className="font-semibold">Antpire GmbH</p>
+                <p>Franz-Sigel-Str. 20</p>
+                <p>68753 Waghäusel</p>
                 <p>Deutschland</p>
+                <p className="mt-2"><span className="font-semibold">Geschäftsführer:</span> Michael Weyrauch</p>
                 <p className="mt-4">
-                  <span className="font-semibold">E-Mail:</span> info@ws-heizoel.de
+                  <span className="font-semibold">E-Mail:</span> info@antpiregmbh.de
                 </p>
               </div>
             </CardContent>
@@ -60,14 +61,14 @@ const Datenschutz = () => {
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">Bei Kontaktaufnahme</h3>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  Bei Ihrer Kontaktaufnahme mit uns (z.B. per Kontaktformular, E-Mail oder Telefon) werden die von Ihnen gemachten Angaben zum Zwecke der Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.
+                  Bei Ihrer Kontaktaufnahme mit uns (z.B. per Kontaktformular oder E-Mail) werden die von Ihnen gemachten Angaben zum Zwecke der Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">Bei Bestellungen</h3>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  Zur Abwicklung Ihrer Bestellung benötigen wir von Ihnen Name, Anschrift, Telefonnummer, E-Mail-Adresse und Zahlungsdaten. Diese Daten werden nur zur Vertragserfüllung verwendet.
+                  Zur Abwicklung Ihrer Bestellung benötigen wir von Ihnen Name, Anschrift, E-Mail-Adresse und Zahlungsdaten. Diese Daten werden nur zur Vertragserfüllung verwendet.
                 </p>
               </div>
             </CardContent>
@@ -150,7 +151,7 @@ const Datenschutz = () => {
                 Bei Fragen zum Datenschutz oder zur Ausübung Ihrer Rechte kontaktieren Sie uns unter:
               </p>
               <div className="mt-3 space-y-1 text-gray-700 text-sm">
-                <p><span className="font-semibold">E-Mail:</span> info@ws-heizoel.de</p>
+                <p><span className="font-semibold">E-Mail:</span> info@antpiregmbh.de</p>
               </div>
             </CardContent>
           </Card>

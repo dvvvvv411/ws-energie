@@ -113,7 +113,7 @@ const Bestellstatus = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Bestellstatus prüfen | Rechnung & Bankdaten – WS Energie</title>
+        <title>Bestellstatus prüfen | Rechnung & Bankdaten – Antpire GmbH</title>
         <meta name="description" content="Prüfen Sie den Status Ihrer Heizöl-Bestellung. Rechnung herunterladen, Bankdaten einsehen und Ihre Überweisung durchführen." />
       </Helmet>
       <Header />

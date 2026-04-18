@@ -1,6 +1,6 @@
-import { Mail, MapPin, Clock, ArrowUpRight, Sparkles, Phone } from 'lucide-react';
+import { Mail, MapPin, Clock, ArrowUpRight, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import wsLogoFooter from '@/assets/ghs-logo-footer.png';
+import AntpireLogo from './AntpireLogo';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -29,17 +29,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1 space-y-6">
-            <img 
-              src={wsLogoFooter} 
-              alt="WS Energie" 
-              className="h-12 lg:h-14"
-            />
+            <AntpireLogo size="lg" />
             <p className="text-gray-400 leading-relaxed">
-              Ihr zuverlässiger Partner für Heizöl in Deutschland mit über 12 Jahren Erfahrung. 
+              Ihr zuverlässiger Partner für Heizöl in Deutschland mit über 4 Jahren Erfahrung. 
               Qualität, Service und faire Preise.
             </p>
             <div className="pt-2">
-              <div className="font-semibold text-white">WS-Energie Verwaltungs-GmbH</div>
+              <div className="font-semibold text-white">Antpire GmbH</div>
               <div className="text-sm text-gray-500">Deutschlands Heizöl-Experte</div>
             </div>
           </div>
@@ -68,23 +64,17 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-gray-400">
                 <div className="w-10 h-10 rounded-xl bg-primary-900/50 flex items-center justify-center">
-                  <Phone size={18} className="text-primary-400" />
-                </div>
-                <a href="tel:+4961318888965" className="hover:text-white transition-colors">06131-8888965</a>
-              </div>
-              <div className="flex items-center gap-3 text-gray-400">
-                <div className="w-10 h-10 rounded-xl bg-primary-900/50 flex items-center justify-center">
                   <Mail size={18} className="text-primary-400" />
                 </div>
-                <span>info@ws-heizoel.de</span>
+                <span>info@antpiregmbh.de</span>
               </div>
               <div className="flex items-start gap-3 text-gray-400">
                 <div className="w-10 h-10 rounded-xl bg-accent-orange-900/50 flex items-center justify-center flex-shrink-0">
                   <MapPin size={18} className="text-accent-orange-400" />
                 </div>
                 <div>
-                  <div>Mittlere Bleiche 26</div>
-                  <div>55116 Mainz</div>
+                  <div>Franz-Sigel-Str. 20</div>
+                  <div>68753 Waghäusel</div>
                 </div>
               </div>
             </div>
@@ -98,12 +88,12 @@ const Footer = () => {
                 <div className="w-10 h-10 rounded-xl bg-primary-900/50 flex items-center justify-center">
                   <Clock size={18} className="text-primary-400" />
                 </div>
-                <span>Service-Hotline</span>
+                <span>Service-Zeiten</span>
               </div>
               <div className="space-y-1.5 text-sm text-gray-500">
                 <div>Mo - Fr: 08:00 - 18:00</div>
                 <div>Sa: 09:00 - 14:00</div>
-                <div>So: Notfall-Hotline</div>
+                <div>So: Notfall-Service</div>
               </div>
               
               {/* Emergency Badge */}
@@ -115,7 +105,7 @@ const Footer = () => {
                     <span>24/7 Notfall-Service</span>
                   </div>
                   <div className="text-xs text-gray-400">
-                    Bei Heizungsausfällen erreichen Sie uns rund um die Uhr
+                    Bei Heizungsausfällen erreichen Sie uns jederzeit per E-Mail
                   </div>
                 </div>
               </div>
@@ -127,10 +117,10 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t border-gray-800/50">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
             <div className="text-gray-500 text-sm">
-              © {currentYear} WS-Energie Verwaltungs-GmbH. Alle Rechte vorbehalten.
+              © {currentYear} Antpire GmbH. Alle Rechte vorbehalten.
             </div>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
-              {legalLinks.map((link, index) => (
+              {legalLinks.map((link) => (
                 <Link 
                   key={link.to}
                   to={link.to} 

@@ -33,7 +33,7 @@ const HeroSection = () => {
       icon: Users, 
       title: 'Zufriedene Kunden', 
       subtitle: 'Über 100.000',
-      description: 'Mehr als 100.000 Kunden vertrauen uns seit über 12 Jahren.',
+      description: 'Mehr als 100.000 Kunden vertrauen uns seit 2021.',
       color: 'primary' 
     }
   ];
@@ -50,7 +50,7 @@ const HeroSection = () => {
 
   const trustStats = [
     { icon: Users, value: '100.000+', label: 'Kunden', color: 'primary' },
-    { icon: Award, value: '12+', label: 'Jahre', color: 'orange' },
+    { icon: Award, value: '4+', label: 'Jahre', color: 'orange' },
     { icon: Headphones, value: '24h', label: 'Service', color: 'primary' }
   ];
 
@@ -81,7 +81,7 @@ const HeroSection = () => {
               {/* Premium Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-accent-orange-50 to-accent-orange-100/80 text-accent-orange-700 rounded-full text-sm font-semibold border border-accent-orange-200/50 shadow-sm backdrop-blur-sm">
                 <Sparkles className="w-4 h-4" />
-                <span>Heizöl-Experte seit über 12 Jahren</span>
+                <span>Heizöl-Experte seit 2021</span>
               </div>
               
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-[1.1] tracking-tight">
@@ -94,7 +94,7 @@ const HeroSection = () => {
               
               <div className="space-y-3 max-w-2xl">
                 <p className="text-lg lg:text-xl text-gray-700 leading-relaxed font-medium">
-                  Vertrauen Sie auf über 12 Jahre Erfahrung
+                  Vertrauen Sie auf über 4 Jahre Erfahrung
                 </p>
                 <div className="flex flex-col gap-2 text-base lg:text-lg text-gray-600">
                   <div className="flex items-center gap-2">
