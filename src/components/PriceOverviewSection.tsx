@@ -13,12 +13,12 @@ const PriceOverviewSection = () => {
   const [activeTab, setActiveTab] = useState('prices');
 
   const priceHistory = [
-    { month: 'Jan', standard: 0.88, premium: 0.91 },
-    { month: 'Feb', standard: 0.89, premium: 0.92 },
-    { month: 'Mär', standard: 0.87, premium: 0.90 },
-    { month: 'Apr', standard: 0.90, premium: 0.93 },
-    { month: 'Mai', standard: 0.92, premium: 0.95 },
-    { month: 'Jun', standard: 0.90, premium: 0.93 },
+    { month: 'Jan', standard: 1.28, premium: 1.31 },
+    { month: 'Feb', standard: 1.29, premium: 1.32 },
+    { month: 'Mär', standard: 1.27, premium: 1.30 },
+    { month: 'Apr', standard: 1.30, premium: 1.33 },
+    { month: 'Mai', standard: 1.32, premium: 1.35 },
+    { month: 'Jun', standard: 1.30, premium: 1.33 },
   ];
 
   const chartConfig = {
@@ -33,10 +33,10 @@ const PriceOverviewSection = () => {
   };
 
   const quantityDiscounts = [
-    { range: '500-999L', discount: '0%', price: '0,90€/L' },
-    { range: '1000-1999L', discount: '2%', price: '0,88€/L' },
-    { range: '2000-2999L', discount: '3%', price: '0,87€/L' },
-    { range: '3000L+', discount: '5%', price: '0,86€/L' },
+    { range: '500-999L', discount: '0%', price: '1,30€/L' },
+    { range: '1000-1999L', discount: '2%', price: '1,28€/L' },
+    { range: '2000-2999L', discount: '3%', price: '1,27€/L' },
+    { range: '3000L+', discount: '5%', price: '1,26€/L' },
   ];
 
   const paymentOptions = [
@@ -87,7 +87,7 @@ const PriceOverviewSection = () => {
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl text-primary-600">Standard Heizöl</CardTitle>
                   <div className="text-4xl font-bold text-gray-900">
-                    ab 0,90€
+                    ab 1,30€
                     <span className="text-lg text-gray-600">/Liter</span>
                   </div>
                 </CardHeader>
@@ -114,7 +114,7 @@ const PriceOverviewSection = () => {
                   <Badge className="mb-2 bg-primary-600">PREMIUM QUALITÄT</Badge>
                   <CardTitle className="text-2xl text-primary-600">Premium Heizöl</CardTitle>
                   <div className="text-4xl font-bold text-gray-900">
-                    ab 0,93€
+                    ab 1,33€
                     <span className="text-lg text-gray-600">/Liter</span>
                   </div>
                 </CardHeader>

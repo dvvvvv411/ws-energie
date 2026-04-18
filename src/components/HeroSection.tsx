@@ -99,7 +99,7 @@ const HeroSection = () => {
                 <div className="flex flex-col gap-2 text-base lg:text-lg text-gray-600">
                   <div className="flex items-center gap-2">
                     <Check className="w-5 h-5 text-primary-500 flex-shrink-0" />
-                    <span>Heizöl <span className="text-primary-600 font-bold">ab nur 90 Cent pro Liter</span></span>
+                    <span>Heizöl <span className="text-primary-600 font-bold">ab nur 1,30€ pro Liter</span></span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Check className="w-5 h-5 text-primary-500 flex-shrink-0" />
