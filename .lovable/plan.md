@@ -1,71 +1,60 @@
 
 
-# Neue "Bestellstatus"-Seite mit Rechnungs- & Bankdaten-Anzeige
+# Komplettes Rebranding: WS-Energie → Antpire GmbH
 
-## Überblick
+## Neue Stammdaten (überall ersetzt)
 
-Neue Seite `/bestellstatus` in der Navbar, auf der Kunden per Bestellnummer + PLZ ihre Rechnung, Bankdaten und Gesamtpreis einsehen können. Die `branding_id` (`1346162f-bb85-4d94-9652-939a7a1794c6`) wird automatisch mitgesendet.
+| Alt | Neu |
+|---|---|
+| WS-Energie Verwaltungs-GmbH | **Antpire GmbH** |
+| Mittlere Bleiche 26, 55116 Mainz | **Franz-Sigel-Str. 20, 68753 Waghäusel** |
+| HRB 43804, Amtsgericht Mainz | **HRB 740142, Amtsgericht Mannheim** |
+| DE369810911 | **DE455291518** |
+| info@ws-heizoel.de | **info@antpiregmbh.de** |
+| 06131-8888965 / Telefon | **komplett entfernt** |
+| Geschäftsführer (fehlt) | **Michael Weyrauch** (im Impressum hinzufügen) |
+| 2013 / 12 Jahre Erfahrung | **2021 / 4 Jahre Erfahrung** |
+| 2016 (BenefitsSection) | **2021** |
+| Logo-Bilder (ghs-logo) | **Text-Logo "Antpire" in Brandingfarbe** |
+| checkout.ws-heizoel.de | **checkout.antpiregmbh.de** |
 
-## Änderungen
+## Änderungen pro Datei
 
-### 1. Neue Seite `src/pages/Bestellstatus.tsx`
+### Logo → Antpire Textlogo
+**Neue Komponente** `src/components/AntpireLogo.tsx` — gradientes Textlogo "Antpire" mit Tailwind in Brandingfarbe (primary/accent-orange gradient), Größen-Prop für unterschiedliche Anwendungen.
 
-**Eingabe-Zustand** (Formular):
-- Zwei Felder: Bestellnummer + PLZ
-- "Bestellung abfragen"-Button
-- Fehlerbehandlung mit spezifischen Meldungen (400/404/500)
+- **`Header.tsx`**: `<img wsLogo>` (2×) → `<AntpireLogo>`. Top-Bar: Telefonzeile + Phone-Import entfernen, nur E-Mail bleibt → `info@antpiregmbh.de`.
+- **`Footer.tsx`**: `<img wsLogoFooter>` → `<AntpireLogo>`. Phone-Block + Import entfernen. Adresse, Firmenname, E-Mail aktualisieren. "12 Jahren" → "4 Jahren".
+- **`MobileHeader.tsx`**: Logo-`<img>` → `<AntpireLogo>`. Mailto + alt-Text aktualisieren.
 
-**Erfolgs-Zustand** (Bestellbestätigung):
-- **Card 1 — Gesamtpreis**: `total_amount` in EUR, darunter enthaltene MwSt. (Gesamtbetrag × 0.19 / 1.19, als "inkl. X € MwSt."), plus Hinweis "Kostenlose Lieferung"
-- **Card 2 — Bankdaten**: Kontoinhaber, IBAN, BIC, Bankname — alle in gleicher Textgröße. Deutlicher Hinweis: "Bitte überweisen Sie den Betrag an folgende Bankverbindung"
-- **Card 3 — Rechnung PDF**: Großes PDF-Thumbnail/Preview-Bereich + Download-Button, der die PDF direkt herunterlädt (via `fetch` → `blob` → `a.download`), kein neuer Tab
-- Bestellnummer wird oben angezeigt
+### Preisrechner (Checkout-Domain)
+- **`PriceCalculator.tsx`**, **`HorizontalPriceCalculator.tsx`**, **`MobilePriceCalculator.tsx`**:
+  - `checkout.ws-heizoel.de` → `checkout.antpiregmbh.de`
+  - Toast-Meldungen: `info@ws-heizoel.de` → `info@antpiregmbh.de`
 
-Layout im gleichen Stil wie die anderen Seiten (Header, Footer, Helmet SEO).
+### Rechtstexte
+- **`Impressum.tsx`**: Firma, Adresse, HRB, Registergericht, USt-IdNr., E-Mail aktualisieren. **Telefon-Block + Phone-Icon-Import entfernen**. Neuer Block **"Geschäftsführer: Michael Weyrauch"**. Helmet title/description.
+- **`Datenschutz.tsx`**: Verantwortlicher (Name + Adresse), Kontakt-E-Mail, Helmet.
+- **`AGB.tsx`**: Firma + Anschrift im Geltungsbereich, Helmet.
+- **`Widerrufsrecht.tsx`**: Anschrift in Widerruf-Erklärung, Kontakt-Block, Muster-Formular ("An: …"), Helmet.
 
-### 2. `src/components/Header.tsx` — Nav-Link hinzufügen
+### Content-Seiten / Komponenten
+- **`AboutUs.tsx`**: Helmet, Hero-Headline ("Über Antpire GmbH"), "Seit 2013" → "Seit 2021", "12 Jahre" → "4 Jahre", Mainz → Waghäusel, E-Mail-Button, Kontaktdetails-Card (Adresse/HRB/USt-IdNr./Geschäftsführer hinzufügen), Telefon-Anzeige falls vorhanden entfernen, Animation-Target `years: 12 → 4`.
+- **`CompanySection.tsx`**: Stat "2013" → "2021", "12 Jahre Erfahrung" → "4 Jahre Erfahrung", Story-Text (Mainz → Waghäusel, Jahreszahlen), `alt`-Attribut.
+- **`HeroSection.tsx`**: "Heizöl-Experte seit über 12 Jahren" → "seit 2021", "über 12 Jahre Erfahrung" → "über 4 Jahre Erfahrung", "Über 100.000" Kunden-Behauptung anpassen falls gewünscht (wird auf "Viele zufriedene Kunden" reduziert da Zeitraum kürzer — **Frage: behalten oder reduzieren?** → ich lasse Zahl bestehen, nur Zeitraum ändern).
+- **`BenefitsSection.tsx`**: "Über 20 Jahre Erfahrung" → "Seit 2021 zuverlässig", "seit 2016" → "seit 2021".
+- **`ReviewsSection.tsx`**: "WS Energie" Erwähnungen in Review-Texten → "Antpire".
+- **`ServiceContact.tsx`**: E-Mail aktualisieren.
+- **`Bestellstatus.tsx`**: Falls E-Mail/Branding-Texte vorhanden → aktualisieren.
 
-Neuen Eintrag `{ to: '/bestellstatus', label: 'Bestellstatus' }` in beide Nav-Arrays (Desktop + Mobile).
+### SEO / Meta (alle Seiten)
+- **`index.html`**: title, meta description, og:title, og:description, og:url falls gesetzt.
+- Alle `<Helmet>`-Blöcke (`Index`, `Products`, `Services`, `AboutUs`, `Impressum`, `Datenschutz`, `AGB`, `Widerrufsrecht`, `Bestellstatus`, `DesignSystem`): "WS Energie" / "WS-Heizöl" → "Antpire", Adresse Mainz → Waghäusel.
 
-### 3. `src/App.tsx` — Route hinzufügen
+### Aufräumen
+- `Phone`-Imports aus `Header.tsx`, `Footer.tsx`, `Impressum.tsx` entfernen.
+- Logo-Asset-Imports (`wsLogo`, `wsLogoFooter`) entfernen — alte PNG-Dateien bleiben im Repo (nicht gelöscht, nur unreferenziert).
 
-```
-import Bestellstatus from "./pages/Bestellstatus";
-<Route path="/bestellstatus" element={<Bestellstatus />} />
-```
-
-### 4. API-Aufruf
-
-```typescript
-const response = await fetch(
-  "https://luhhnsvwtnmxztcmdxyq.supabase.co/functions/v1/get-invoice-by-order",
-  {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      order_number: orderNumber,
-      zip_code: zipCode,
-      branding_id: "1346162f-bb85-4d94-9652-939a7a1794c6"
-    })
-  }
-);
-```
-
-### 5. PDF-Download (direkt, kein neuer Tab)
-
-```typescript
-const downloadPdf = async (url: string) => {
-  const res = await fetch(url);
-  const blob = await res.blob();
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.download = `Rechnung-${orderNumber}.pdf`;
-  a.click();
-  URL.revokeObjectURL(a.href);
-};
-```
-
-### 6. MwSt.-Berechnung
-
-Netto = `total_amount / 1.19`, MwSt. = `total_amount - netto` — wird als "inkl. X,XX € MwSt. (19%)" angezeigt, nicht aufaddiert.
+## Branding-Farbe Logo
+"Antpire" als Wortmarke mit `gradient-text-premium` Klasse (existiert bereits in `index.css`) oder `text-primary-600` mit `font-bold tracking-tight`. Skalierbar per `size`-Prop (`sm`/`md`/`lg`).
 
