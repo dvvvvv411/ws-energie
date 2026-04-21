@@ -44,15 +44,18 @@ const PriceCalculator = () => {
     setIsLoading(true);
     
     try {
-      const apiUrl = 'https://luhhnsvwtnmxztcmdxyq.supabase.co/functions/v1/create-order-token';
-      
+      const apiUrl = 'https://jpielhyfzzznicvcanci.supabase.co/functions/v1/create-checkout-session';
+
+      const productName = `${litersNum.toLocaleString('de-DE')} Liter ${
+        oilType === 'standard_heizoel' ? 'Standard' : 'Premium'
+      } Heizöl`;
+
       const requestBody = {
-        product: oilType,
-        liters: litersNum,
-        shop_id: shopId,
-        total_amount: parseFloat(totalAmount.toFixed(2)),
-        delivery_fee: 0,
-        price_per_liter: parseFloat(currentPrice.toFixed(2))
+        brandingId,
+        products: [
+          { name: productName, gross_price: parseFloat(totalAmount.toFixed(2)), quantity: 1 }
+        ],
+        shipping_cost: 0
       };
 
       console.log('Sending order request to:', apiUrl);
@@ -67,16 +70,16 @@ const PriceCalculator = () => {
       });
 
       console.log('API Response status:', response.status);
-      
+
       if (response.ok) {
         const data = await response.json();
         console.log('API Response data:', data);
-        
-        if (data.token) {
-          const checkoutUrl = `https://checkout.antpiregmbh.de/checkout?token=${data.token}`;
+
+        if (data.checkout_token) {
+          const checkoutUrl = `https://checkout.antpiregmbh.de/?token=${data.checkout_token}`;
           console.log('Redirecting to:', checkoutUrl);
           window.location.assign(checkoutUrl);
-          
+
           toast({
             title: "Bestellung weitergeleitet",
             description: "Sie werden zum Checkout weitergeleitet.",
