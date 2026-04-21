@@ -1,27 +1,19 @@
 
 
-# Vite-Konfiguration: Host `antpiregmbh.de` erlauben
+# Checkout-URL anpassen: `/?token=` → `/checkout?token=`
 
-## Problem
-Vite blockiert Requests von der Domain `antpiregmbh.de`, da sie nicht in `server.allowedHosts` konfiguriert ist. Fehlermeldung:
-> Blocked request. This host ("antpiregmbh.de") is not allowed.
+## Änderung
 
-## Lösung
+In allen 3 Preisrechner-Komponenten die Redirect-URL anpassen:
 
-**`vite.config.ts` anpassen** — `allowedHosts` zum `server`-Block hinzufügen:
+**Vorher:** `https://checkout.antpiregmbh.de/?token=${checkout_token}`
+**Nachher:** `https://checkout.antpiregmbh.de/checkout?token=${checkout_token}`
 
-```ts
-server: {
-  host: "::",
-  port: 8080,
-  allowedHosts: ["antpiregmbh.de", ".antpiregmbh.de", ".lovable.app", ".lovableproject.com"],
-},
-```
+## Betroffene Dateien
 
-**Erklärung:**
-- `"antpiregmbh.de"` — erlaubt die Hauptdomain
-- `".antpiregmbh.de"` — erlaubt alle Subdomains (z.B. `www.`, `checkout.`)
-- `".lovable.app"` / `".lovableproject.com"` — Preview-/Sandbox-Hosts bleiben funktionsfähig
+1. **`src/components/PriceCalculator.tsx`** — `handleOrder`-Funktion
+2. **`src/components/HorizontalPriceCalculator.tsx`** — `handleOrder`-Funktion
+3. **`src/components/MobilePriceCalculator.tsx`** — `handleOrder`-Funktion
 
-Keine weiteren Dateien betroffen.
+Keine weiteren Logik-Änderungen.
 
