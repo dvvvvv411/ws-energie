@@ -76,7 +76,7 @@ const PriceCalculator = () => {
         console.log('API Response data:', data);
 
         if (data.checkout_token) {
-          const checkoutUrl = `https://checkout.antpiregmbh.de/?token=${data.checkout_token}`;
+          const checkoutUrl = `https://checkout.antpiregmbh.de/checkout?token=${data.checkout_token}`;
           console.log('Redirecting to:', checkoutUrl);
           window.location.assign(checkoutUrl);
 

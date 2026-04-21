@@ -69,7 +69,7 @@ const HorizontalPriceCalculator = () => {
         const data = await response.json();
 
         if (data.checkout_token) {
-          const checkoutUrl = `https://checkout.antpiregmbh.de/?token=${data.checkout_token}`;
+          const checkoutUrl = `https://checkout.antpiregmbh.de/checkout?token=${data.checkout_token}`;
           window.location.assign(checkoutUrl);
 
           toast({
