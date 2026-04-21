@@ -19,7 +19,7 @@ const PriceCalculator = () => {
     premium_heizoel: 1.33
   };
 
-  const shopId = "1346162f-bb85-4d94-9652-939a7a1794c6";
+  const brandingId = "9290eb97-73be-4c7b-9669-4ba2aad1a986";
   const currentPrice = prices[oilType];
   const litersNum = parseInt(liters) || 0;
   const canCalculate = liters !== '' && litersNum >= 1500 && litersNum <= 32000;
