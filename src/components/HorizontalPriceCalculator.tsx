@@ -16,7 +16,7 @@ const HorizontalPriceCalculator = () => {
     premium_heizoel: 1.33
   };
 
-  const shopId = "1346162f-bb85-4d94-9652-939a7a1794c6";
+  const brandingId = "9290eb97-73be-4c7b-9669-4ba2aad1a986";
   const currentPrice = prices[oilType];
   const litersNum = parseInt(liters) || 0;
   const canCalculate = liters !== '' && litersNum >= 1500 && litersNum <= 32000;
@@ -43,15 +43,18 @@ const HorizontalPriceCalculator = () => {
     setIsLoading(true);
     
     try {
-      const apiUrl = 'https://luhhnsvwtnmxztcmdxyq.supabase.co/functions/v1/create-order-token';
-      
+      const apiUrl = 'https://jpielhyfzzznicvcanci.supabase.co/functions/v1/create-checkout-session';
+
+      const productName = `${litersNum.toLocaleString('de-DE')} Liter ${
+        oilType === 'standard_heizoel' ? 'Standard' : 'Premium'
+      } Heizöl`;
+
       const requestBody = {
-        product: oilType,
-        liters: litersNum,
-        shop_id: shopId,
-        total_amount: parseFloat(totalAmount.toFixed(2)),
-        delivery_fee: 0,
-        price_per_liter: parseFloat(currentPrice.toFixed(2))
+        brandingId,
+        products: [
+          { name: productName, gross_price: parseFloat(totalAmount.toFixed(2)), quantity: 1 }
+        ],
+        shipping_cost: 0
       };
 
       const response = await fetch(apiUrl, {
@@ -61,14 +64,14 @@ const HorizontalPriceCalculator = () => {
         },
         body: JSON.stringify(requestBody)
       });
-      
+
       if (response.ok) {
         const data = await response.json();
-        
-        if (data.token) {
-          const checkoutUrl = `https://checkout.antpiregmbh.de/checkout?token=${data.token}`;
+
+        if (data.checkout_token) {
+          const checkoutUrl = `https://checkout.antpiregmbh.de/?token=${data.checkout_token}`;
           window.location.assign(checkoutUrl);
-          
+
           toast({
             title: "Bestellung weitergeleitet",
             description: "Sie werden zum Checkout weitergeleitet.",
